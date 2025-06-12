@@ -9,10 +9,10 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Fetch_Take_HomeApp: App {
+struct FetchTakeHomeApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Recipe.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
